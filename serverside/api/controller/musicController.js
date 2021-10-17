@@ -9,6 +9,7 @@ exports.getAllMusics = async (req, res) => {
   }
 };
 exports.addNewMusic = async (req, res) => {
+  console.log(req.body)
   try {
     const music = new Music({
       title:req.body.title,

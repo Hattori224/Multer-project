@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 });
 
 const userRoutes = require("./api/routes/music"); //bring in our user routes
-app.use("/user", userRoutes);
+app.use("/music", userRoutes);
 
 app.listen(PORT, () => {
   console.log(`App is running on ${PORT}`);
