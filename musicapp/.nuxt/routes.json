@@ -1,0 +1,9 @@
+[
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/robin/multer-project/musicapp/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_1a37edf6"
+  }
+]
