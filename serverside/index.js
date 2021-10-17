@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const config = require("./config/db");
 const app = express();
 //configure database and mongoose
-mongoose.set("useCreateIndex", true);
+// mongoose.set("useCreateIndex", true);
 mongoose
   .connect(config.database, { useNewUrlParser: true })
   .then(() => {
@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
   res.json("Hola MEVN devs...Assemble");
 });
 
-const userRoutes = require("./api/user/route/user"); //bring in our user routes
+const userRoutes = require("./api/routes/music"); //bring in our user routes
 app.use("/user", userRoutes);
 
 app.listen(PORT, () => {
